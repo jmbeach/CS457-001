@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Your awesome title</title>
+    <description>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+</description>
+    <link>http://yourdomain.com/CS457-001/</link>
+    <atom:link href="http://yourdomain.com/CS457-001/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Wed, 13 Apr 2016 21:46:35 -0500</pubDate>
+    <lastBuildDate>Wed, 13 Apr 2016 21:46:35 -0500</lastBuildDate>
+    <generator>Jekyll v3.1.2</generator>
+    
+      <item>
+        <title>Test 2 Discussion</title>
+        <description>&lt;ul&gt;
+  &lt;li&gt;ER -&amp;gt; Relational&lt;/li&gt;
+  &lt;li&gt;3rd Normal form&lt;/li&gt;
+  &lt;li&gt;Indexes
+    &lt;ul&gt;
+      &lt;li&gt;Inserting into a B+ tree&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;MongoDB&lt;/li&gt;
+  &lt;li&gt;NOSQL
+    &lt;ul&gt;
+      &lt;li&gt;Transactions&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Cheat sheet
+    &lt;ul&gt;
+      &lt;li&gt;8 1/2 x 11&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;review-of-hw6&quot;&gt;Review of HW6&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;#6
+    &lt;ul&gt;
+      &lt;li&gt;For all type Member Events that have an actor id &amp;lt; 1200000, list its actor id and repo name.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;200,000 tuples in DB
+    &lt;ul&gt;
+      &lt;li&gt;50 tuples per page
+        &lt;ul&gt;
+          &lt;li&gt;4,000 pages&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;How many pages are accessed?
+        &lt;ul&gt;
+          &lt;li&gt;4000 if no index&lt;/li&gt;
+          &lt;li&gt;If there is an index
+            &lt;ul&gt;
+              &lt;li&gt;B+ tree index
+                &lt;ul&gt;
+                  &lt;li&gt;clustered
+                    &lt;ul&gt;
+                      &lt;li&gt;leaf nodes are pointers to pages we want to receive&lt;/li&gt;
+                      &lt;li&gt;Let’s say the selectivity is 1/200
+                        &lt;ul&gt;
+                          &lt;li&gt;will select 1000 rows&lt;/li&gt;
+                          &lt;li&gt;100 index entries per page
+                            &lt;ul&gt;
+                              &lt;li&gt;Have to traverse tree and find the correct leaf node&lt;/li&gt;
+                              &lt;li&gt;&lt;img src=&quot;https://www.simple-talk.com/iwritefor/articlefiles/610-image002.jpg&quot; alt=&quot;&quot; /&gt;&lt;/li&gt;
+                              &lt;li&gt;3 non-leaf nodes + 1000/100 + 100/50 = 33 pages&lt;/li&gt;
+                            &lt;/ul&gt;
+                          &lt;/li&gt;
+                        &lt;/ul&gt;
+                      &lt;/li&gt;
+                    &lt;/ul&gt;
+                  &lt;/li&gt;
+                  &lt;li&gt;non-clustered
+                    &lt;ul&gt;
+                      &lt;li&gt;assume the worst case where they’re all on a seperate page&lt;/li&gt;
+                      &lt;li&gt;3 non-leaf nodes + 1000/100 + 10000 = 1013 pages&lt;/li&gt;
+                    &lt;/ul&gt;
+                  &lt;/li&gt;
+                &lt;/ul&gt;
+              &lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Wed, 13 Apr 2016 00:00:00 -0500</pubDate>
+        <link>http://yourdomain.com/CS457-001/2016/04/13/test-2-discussion.html</link>
+        <guid isPermaLink="true">http://yourdomain.com/CS457-001/2016/04/13/test-2-discussion.html</guid>
+        
+        
+      </item>
+    
+  </channel>
+</rss>
